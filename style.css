@@ -96,3 +96,18 @@ input {
 #qtd {
 	width: 15rem;
 }
+
+@media(max-width:770px) {
+    h2 {
+		font-size: 2.4rem;
+	}
+
+	p, legend, label{
+		font-size: 1.6rem;
+		padding: 0.6rem;
+	}
+	
+	fieldset {
+		gap: 1.2rem;
+	}
+}
