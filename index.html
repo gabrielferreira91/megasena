@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <charset=utf-8>
+	<title>Ganhando na Mega</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <main>
+        <div class="titulo">
+            <h2> Jogos da Mega Sena: </h2>
+        </div>
+        <div>
+            <section>
+                <div class="jogos">
+                    <p>Quantos jogos?</p>
+                    <input type="number" id="qtd">
+                </div>
+                <fieldset id="tipo">
+                    <legend>Jogo de Qtos Números:</legend>
+                
+                    <div>
+                    <input type="radio" id="seis" name="numero" value="6" checked />
+                    <label for="huey">6</label>
+                    </div>
+                
+                    <div>
+                    <input type="radio" id="sete" name="numero" value="7" />
+                    <label for="sete">7</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="oito" name="numero" value="8" />
+                        <label for="oito">8</label>
+                        </div>
+                </fieldset>
+            </section>  
+            <section>
+                <button class="buttonGera" onclick="handleSort()">Gerar Números</button>
+                <button class="buttonGera" onclick="location.reload()">Zerar Lista</button>
+            </section>
+        </div>
+        <section>
+        <ul id="ulList">
+        </ul> 
+        </section>    
+     
+    </main> 
+    <script src="./sorteia.js"></script>
+</body>
+</html>
